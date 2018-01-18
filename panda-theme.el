@@ -13,7 +13,7 @@
 ;;; Commentary:
 
 ;; A Superminimal, dark Syntax Theme for Editors, IDEs, Terminal.
-;; http://panda.siamak.work
+;; Color scheme from http://panda.siamak.work
 
 ;;; Code:
 
@@ -59,6 +59,9 @@
    `(flycheck-info ((t :underline ,cyan)))
    `(flycheck-warning ((t :underline ,orange)))
    `(flycheck-error ((t :underline ,red)))
+   `(flycheck-fringe-info ((t :foreground ,cyan)))
+   `(flycheck-fringe-warning ((t :foreground ,orange)))
+   `(flycheck-fringe-error ((t :foreground ,red)))
 
    ;; Syntax highlighting
    `(font-lock-builtin-face ((t (:foreground ,orange))))
