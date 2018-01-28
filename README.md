@@ -10,7 +10,7 @@
 
 ### Manual
 
-[Download](https://github.com/jamiecollinson/emacs-panda-theme/releases/latest/) the latest version or clone the repository and copy the [`panda-theme.el`](https://github.com/jamiecollinson/emacs-panda-theme/develop/nord-theme.el) theme file to your `~/.emacs.d/themes` directory.
+[Download](https://github.com/jamiecollinson/emacs-panda-theme/releases/latest/) the latest version or clone the repository and copy the [`panda-theme.el`](https://github.com/jamiecollinson/emacs-panda-theme/master/panda-theme.el) theme file to your `~/.emacs.d/themes` directory.
 
 #### Activation
 Make sure that the `themes` directory has been added to the load path:
