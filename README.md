@@ -4,29 +4,52 @@
 
 <p align="center">Based on the <a href="http://panda.siamak.work">Panda</a> color palette.</p>
 
-[![MELPA](https://melpa.org/packages/panda-theme-badge.svg)](https://melpa.org/#/panda-theme)
+<p align="center">
+  <a href="https://melpa.org/#/panda-theme">
+    <img alt="MELPA" src="https://melpa.org/packages/panda-theme-badge.svg"/>
+  </a>
+</p>
 
 ## Installation
 
-### Manual
+### Automatically with `use-package`
 
-[Download](https://github.com/jamiecollinson/emacs-panda-theme/releases/latest/) the latest version or clone the repository and copy the [`panda-theme.el`](https://github.com/jamiecollinson/emacs-panda-theme/blob/master/panda-theme.el) theme file to your `~/.emacs.d/themes` directory.
+If you're using `use-package` add this snippet (taken from my personal [config](https://github.com/jamiecollinson/dotfiles/blob/master/config.org#appearance)) to your `init.el` and panda theme will be installed and enabled.
 
-#### Activation
-Make sure that the `themes` directory has been added to the load path:
-```lisp
-(add-to-list 'custom-theme-load-path (expand-file-name "~/.emacs.d/themes/"))
+``` emacs-lisp
+(use-package panda-theme
+  :ensure t
+  :config
+  (load-theme 'panda t))
 ```
 
-Use Panda as your default theme by adding it to your `.init.el`
-```lisp
+### Automatically using `package.el`
+
+<kbd>M-x</kbd> `package-refresh-contents` then <kbd>M-x</kbd> `package-install` and choose `panda-theme`.
+  
+You'll now need to enable the theme, see instructions below.
+
+### Manually using `package.el`
+
+[Download](https://github.com/jamiecollinson/emacs-panda-theme/releases/latest/) the latest version or clone the repository to your location of choice, e.g.
+
+``` bash
+git clone https://github.com/jamiecollinson/emacs-panda-theme.git
+```
+
+To install into Emacs use <kbd>M-x</kbd> `package-install-file` and select `panda-theme.el` from the download / clone location.
+
+You'll now need to enable the theme, see instructions below.
+
+## Enabling the theme
+
+To enable the theme either <kbd>M-x</kbd> `load-theme` then select `panda`, or add the following to your `init.el`:
+
+``` emacs-lisp
 (load-theme 'panda t)
 ```
-or change it on-the-fly by running <kbd>M-x</kbd> `load-theme` <kbd>RET</kbd> `panda` <kbd>RET</kbd>.
 
-### Package.el
-
-Coming soon.
+To disable the theme <kbd>M-x</kbd> `disable-theme` then select `panda`.
 
 ## Screenshots
 
