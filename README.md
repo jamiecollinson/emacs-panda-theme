@@ -4,7 +4,7 @@
 
 <p align="center">Based on the <a href="http://panda.siamak.work">Panda</a> color palette.</p>
 
----
+[![MELPA](https://melpa.org/packages/panda-theme-badge.svg)](https://melpa.org/#/panda-theme)
 
 ## Installation
 
