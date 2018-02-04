@@ -4,9 +4,8 @@
 ;;
 ;; Code licensed under MIT licence.
 
-;; Author: jamiecollinson
+;; Author: jamiecollinson <jamiecollinson@gmail.com>
 ;; Version: 0.1
-;; Package-Version: 20180114t1941
 ;; Package-Requires: ((emacs "24"))
 ;; URL: https://github.com/jamiecollinson/emacs-panda-theme
 
@@ -18,7 +17,7 @@
 ;;; Code:
 
 (deftheme panda
-  "Created 2018-01-11.")
+  "A Superminimal, dark Syntax Theme")
 
 (let ((bg "#292A2B")
       (bg+ "#404954") ;; emphasis
@@ -98,6 +97,26 @@
    `(git-gutter:changed ((t :foreground ,orange)))
    `(git-gutter:deleted ((t :foreground ,red)))
 
+   ;; magit
+   `(magit-branch ((t (:foreground ,cyan :weight bold))))
+   `(magit-diff-context-highlight ((t (:background ,bg+))))
+   `(magit-diff-file-header ((t (:foreground ,pink :box (:color ,pink)))))
+   `(magit-diff-added ((t (:foreground ,cyan))))
+   `(magit-diff-removed ((t (:foreground ,red))))
+   `(magit-diff-added-highlight ((t (:foreground ,cyan :background ,bg+))))
+   `(magit-diff-removed-highlight ((t (:foreground ,red :background ,bg+))))
+   `(magit-diffstat-added ((t (:foreground ,cyan))))
+   `(magit-diffstat-removed ((t (:foreground ,red))))
+   `(magit-hash ((t (:foreground ,pink))))
+   `(magit-hunk-heading ((t (:foreground ,blue))))
+   `(magit-hunk-heading-highlight ((t (:foreground ,blue :background ,bg+))))
+   `(magit-item-highlight ((t (:foreground ,pink :background ,bg+))))
+   `(magit-log-author ((t (:foreground ,cyan))))
+   `(magit-process-ng ((t (:foreground ,orange :weight bold))))
+   `(magit-process-ok ((t (:foreground ,cyan :weight bold))))
+   `(magit-section-heading ((t (:foreground ,fg :weight bold))))
+   `(magit-section-highlight ((t (:background ,bg+))))
+
    ;; RJSX mode
    `(rjsx-attr ((t :foreground ,orange :inherit italic)))
    `(rjsx-tag ((t :foreground ,red)))
@@ -114,5 +133,6 @@
                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'panda)
+(provide 'panda-theme)
 
 ;;; panda-theme.el ends here
