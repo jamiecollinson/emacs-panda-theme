@@ -120,6 +120,20 @@
    ;; RJSX mode
    `(rjsx-attr ((t :foreground ,orange :inherit italic)))
    `(rjsx-tag ((t :foreground ,red)))
+
+   ;; Org mode
+   `(org-level-1 ((t :foreground ,orange)))
+   `(org-level-2 ((t :foreground ,purple)))
+   `(org-level-3 ((t :foreground ,blue)))
+   `(org-level-4 ((t :foreground ,pink)))
+   `(org-level-5 ((t :foreground ,cyan)))
+   `(org-level-6 ((t :foreground ,purple)))
+   `(org-level-7 ((t :foreground ,red)))
+   `(org-level-8 ((t :foreground ,blue)))
+   `(org-link ((t :foreground ,blue :underline t)))
+   `(org-date ((t :foreground ,blue :underline t)))
+   `(org-todo ((t :foreground ,cyan :weight bold)))
+   `(org-done ((t :foreground ,pink :weight bold)))
    )
 
   (custom-theme-set-variables
