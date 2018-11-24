@@ -43,7 +43,6 @@
    `(ffap ((t :foreground ,fg+)))
    `(fringe ((t (:background ,bg))))
    `(highlight ((t (:background ,bg+))))
-   `(region ((t :background ,bg+)))
    `(linum ((t :foreground ,fg-)))
    `(lazy-highlight ((t (:background ,orange))))
    `(link ((t (:foreground ,blue :underline t))))
@@ -134,6 +133,9 @@
    `(org-date ((t :foreground ,blue :underline t)))
    `(org-todo ((t :foreground ,cyan :weight bold)))
    `(org-done ((t :foreground ,pink :weight bold)))
+
+   ;; highlight-indentation for modes like yaml
+   `(highlight-indentation-face ((t (:background ,bg+))))
    )
 
   (custom-theme-set-variables
